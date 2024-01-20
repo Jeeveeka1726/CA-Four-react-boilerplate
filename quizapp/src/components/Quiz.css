@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.choices{
+    background-color: #EF3837;
+    padding:10px ;
+    border-radius: 50px;
+    width:25vw;
+    text-align: center;
+    color: white;
+    margin-left: 7vw;
+    border: none;
+    cursor: pointer;
+}
+
+.choice{
+    display: flex;
+    justify-content: space-between;
+    margin-top:2.5vw;
+    margin-right: 7vw;
+}
+
+.container{
+    background-color: white;
+    width: 70vw;
+    height:70vh;
+    border: 1px solid black;
+    margin-top:5vw;
+    margin-left: 15vw;
+}
+
+#quizContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 15vh;
+    border-radius: 50px;
+    box-shadow: rgba(241, 0, 36, 0.361) 0px 60px 40px -7px;
+}
+
+.buttons{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    height: 5vh;
+}
+
+#highlight_button{
+    width: 15vw;
+    background-color: #9F4DD2;
+    color: white;
+    cursor: pointer;
+}
+
+#remove_highlight_button{
+    width: 15vw;
+    background-color: #9F4DD2;
+    color: white;
+    cursor: pointer;
+}
+
+#themeButton{
+    border-radius: 50%;
+    width: 7vw;
+    height: 5vh;
+    box-shadow: rgba(255, 0, 0, 0.4) 0px 2px 4px, rgba(255, 0, 0, 0.3) 0px 7px 13px -3px, rgba(255, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.font{
+    font-family: 'Pacifico', cursive;
+}
+
+#resultbox{
+    margin-top: 10vh;
+}
+
+#restart{
+    border-radius: 75px;
+    height: 7vh;
+    width: 10vw;
+    color: white;
+    background-color: #9F4DD2;
+}
+
+#logo{
+    height: 5vh;
+}
+
+.snowballs-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1; /* Ensure the balls are on top of other elements */
+  }
+  
+  .snowballs{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff; /* Ball color */
+    border-radius: 50%; /* Make it round */
+    animation: fallAnimation linear infinite;
+  }
+  
+  @keyframes fallAnimation {
+    to {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+
+.choices {
+    padding: 10px; 
+    box-shadow: 0 0 10px rgb(96, 7, 148); /* Adjust the color and size as needed */
+    transition: box-shadow 0.3s ease; /* Add a transition for a smoother effect */
+  }
+  
+  .choices:hover {
+    box-shadow: 0 0 20px rgb(173, 22, 255); /* Adjust the color and size for the hover effect */
+  }
+  
