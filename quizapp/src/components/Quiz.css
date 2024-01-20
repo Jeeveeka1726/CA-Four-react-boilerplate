@@ -86,7 +86,7 @@ nav{
 }
 
 #resultbox{
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 #restart{
@@ -128,11 +128,14 @@ nav{
 
 .choices {
     padding: 10px; 
-    box-shadow: 0 0 10px rgb(96, 7, 148); /* Adjust the color and size as needed */
-    transition: box-shadow 0.3s ease; /* Add a transition for a smoother effect */
+    box-shadow: 0 0 10px rgb(96, 7, 148); 
+    transition: box-shadow 0.3s ease;
   }
   
   .choices:hover {
-    box-shadow: 0 0 20px rgb(173, 22, 255); /* Adjust the color and size for the hover effect */
+    box-shadow: 0 0 20px rgb(173, 22, 255); 
   }
   
+  
+
+

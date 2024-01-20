@@ -1,16 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Quiz.css"
 
 export default function Result(prop) {
-  // getting the score from QuestionBox.jsx as a prop
-  const score = prop.score
+  const { score, onRestartQuiz } = prop;
+  // // getting the score from QuestionBox.jsx as a prop
+  // const score = prop.score
   // calculating the percentage acquired
   const percentage = (score / 5) * 100;
-
-  //to start again 
-  function restart(){
-    window.location.href = "./QuestionBox.jsx"
-  }
 
   return (
     <div>
@@ -23,7 +19,9 @@ export default function Result(prop) {
                 <br/>
                 <p>Final percentage - {percentage}% </p> 
                 <br />
-                <button  id='restart' onClick={restart}>TRY AGAIN</button>
+                <button  id='restart' onClick={onRestartQuiz}>TRY AGAIN</button>
+                <br />
+                <h3>"Brains at Full Throttle – Quiz Completed, Wisdom Achieved!"</h3>
         </div>
     </div>
     {/* for animation of falling snowballs */}

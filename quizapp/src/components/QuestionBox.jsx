@@ -78,6 +78,11 @@ export default function QuestionBox() {
     ques.style.color = "";
   }
 
+  const onRestartQuiz = () => {
+    setCount(0);
+    setScore(0);
+  };
+
   return (
     <div>
 
@@ -93,7 +98,7 @@ export default function QuestionBox() {
       {
         // ternary operator used to check if the number of questions exceeds the total number of questions it should display the result page
         count > 4 ? (
-          <Result score={score}/>
+          <Result score={score} onRestartQuiz={onRestartQuiz} />
         ) : (
           <div>
             <h3 className='font'> Question {count+1} of 5 </h3>
